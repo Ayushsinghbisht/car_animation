@@ -1,0 +1,92 @@
+body{
+    overflow: hidden;
+}
+.body{
+
+  
+  margin-top: 5vh;
+  
+}
+
+.background{
+  
+   
+    height: 90vh;
+    width: 100vw;
+   
+    background-image: url(road.jpg);
+    /* background-repeat: repeat-x; */
+    background-size: cover;
+    /* animation: frame linear 6s infinite; */
+   
+}
+.road{
+    width: 800vw;
+    background-image: url(road\ crop.jpg);
+    /* background-size: cover; */
+    
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 73.4vh;
+    left:-500vw;
+    height: 22.8vh;
+    
+    animation: frame linear 1s infinite;
+}
+.car{
+    background-image: url(ferrarinoback.png);
+    background-size: cover;
+    height: 40vh;
+    width: 40vw;
+    position: absolute;
+    top: 42.5vh;
+    left:52vw;
+    animation: shake linear 01s infinite;
+}
+.wheel{
+    height: 14.3vh;
+    width: 10vw;
+    background-image: url(ferraityre.png);
+    background-size: cover;
+    position: absolute;
+    left:3.5vw;
+    top:26.3vh;
+    animation: wheelrotation linear .6s infinite;
+
+}
+.wheelb{
+    height: 14.3vh;
+    width: 10vw;
+    background-image: url(ferraityre.png);
+    background-size: cover;
+    position: absolute;
+    left:28vw;
+    top:26.1vh;
+    animation: wheelrotation linear .6s infinite;
+
+}
+
+@keyframes wheelrotation{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes frame{
+    100%{
+        transform: translateX(300vw);
+    }
+}
+@keyframes shake{
+    0%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translatey(-5px);
+    }
+    50%{
+        transform: translatey(5px);
+    }
+}
